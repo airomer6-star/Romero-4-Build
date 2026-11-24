@@ -1,0 +1,109 @@
+/* CSS written by Angelina Romero */
+
+/* GLOBAL STYLES (MOBILE FIRST) */
+
+body {
+    display:grid;
+    grid-template-columns:1fr;
+    background-color:#A53F2B;
+    margin: 0;
+    color: #F6EBD7;
+    font-family: Futura, sans-serif;
+    line-height: 1.7;
+}
+@media screen and (min-width:600px) {
+    .card-row {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+}
+@media screen and (min-width:800px) {
+    .card-row {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+header {
+  min-height: 150px;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem 1.25rem;
+  background-size: cover;
+  background-position: center;
+  font-style: Italic;
+}
+h1{
+    font-size: 40pt;
+}
+section {
+    padding: 2rem;
+}
+section {
+    border:3pt solid #E8B85C;
+    border-radius: 10pt;
+    margin: 1rem;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5);
+}
+nav {
+   background-color: #385B42;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+@media screen and (min-width:600px) {
+  nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+}
+nav a {
+  display: block;
+  padding: 0.85rem 1.25rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #E8B85C;
+}
+@media screen and (min-width:600px) {
+  nav a {
+  display: block;
+  padding: 0.85rem 1.25rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-top: 1px solid #E8B85C;
+  border-bottom: 1px solid #E8B85C;
+}
+}
+nav a:hover,
+nav a:focus {
+  background-color: #E8B85C;
+}
+section ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+section li {
+  list-style: none;
+  border-top: 1px solid #E8B85C;
+  padding-bottom: 10pt;
+}
+footer {
+    background-color: #385B42;
+    padding: 2rem;
+}
